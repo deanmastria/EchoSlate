@@ -18,41 +18,8 @@
     <loc>http://localhost:1313/en/</loc>
     <lastmod>2024-10-18T11:17:47-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/en/home/</loc>
-    <lastmod>2024-10-18T11:17:47-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/es/home/</loc>
-    <lastmod>2024-10-18T11:17:47-04:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/es/</loc>
     <lastmod>2024-10-18T11:17:47-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/en/search/</loc>
-    <lastmod>2024-10-18T11:17:27-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/es/search/</loc>
-    <lastmod>2024-10-18T11:17:27-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/en/upload/</loc>
-    <lastmod>2024-10-18T11:17:07-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/es/upload/</loc>
-    <lastmod>2024-10-18T11:17:07-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/es/edit/</loc>
-    <lastmod>2024-10-18T11:15:31-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/en/contact/</loc>
-    <lastmod>2024-10-18T11:14:26-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/es/contact/</loc>
-    <lastmod>2024-10-18T11:14:26-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/en/about/</loc>
-    <lastmod>2024-10-18T11:14:10-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/es/about/</loc>
-    <lastmod>2024-10-18T11:14:10-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/desarrollo-full-stack/</loc>
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
