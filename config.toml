@@ -1,15 +1,17 @@
 baseURL = "http://example.com/"
 languageCode = "en-us"
 title = "EchoSlate"
-theme = ""  # Add a theme if you want, or leave it empty
+theme = "ananke"  
 defaultContentLanguage = "en"
+enableMissingTranslationPlaceholders = true  # Helps identify missing translations
 
-# Languages configuration with params
+# Language Configuration
 [languages]
   [languages.en]
     languageName = "English"
     weight = 1
     title = "EchoSlate"
+    contentDir = "content/en"
     [languages.en.params]
       description = "A digital portfolio website to showcase resumes and projects."
 
@@ -17,59 +19,60 @@ defaultContentLanguage = "en"
     languageName = "Español"
     weight = 2
     title = "EchoSlate"
+    contentDir = "content/es"
     [languages.es.params]
       description = "Un sitio web de portafolio digital para mostrar currículums y proyectos."
 
-# Menus
+# Menus Configuration
 [menu]
 
   [[menu.main]]
     identifier = "home"
     name = "Home"
-    url = "/en/"
+    url = "/"
     weight = 1
 
   [[menu.main]]
     identifier = "users"
     name = "Users"
-    url = "/en/users/"
+    url = "/users/"
     weight = 2
 
   [[menu.main]]
     identifier = "edit"
     name = "Edit"
-    url = "/en/edit/"
+    url = "/edit/"
     weight = 3
 
   [[menu.main]]
     identifier = "upload"
     name = "Upload"
-    url = "/en/upload/"
+    url = "/upload/"
     weight = 4
 
   [[menu.main]]
     identifier = "search"
     name = "Search"
-    url = "/en/search/"
+    url = "/search/"
     weight = 5
 
   [[menu.main]]
     identifier = "about"
     name = "About"
-    url = "/en/about/"
+    url = "/about/"
     weight = 6
 
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
-    url = "/en/contact/"
+    url = "/contact/"
     weight = 7
 
-# Markup configuration
+# Markup Configuration
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
 
   [markup.highlight]
-    noClasses = false  # Set to true if you want to disable CSS classes for code highlighting
+    noClasses = false  # Set to true to disable CSS classes for code highlighting

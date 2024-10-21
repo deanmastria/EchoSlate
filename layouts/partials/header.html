@@ -1,13 +1,20 @@
 <header class="bg-gray-800 text-white p-4 fixed w-full z-10">
-    <nav class="max-w-7xl mx-auto flex justify-between items-center">
-      <div class="text-2xl font-bold">
-        <a href="/" class="hover:text-gray-400">EchoSlate</a>
-      </div>
-      <ul class="flex space-x-4">
-        {{ range .Site.Menus.main }}
-        <li><a href="{{ .URL }}" class="hover:text-gray-400">{{ .Name }}</a></li>
-        {{ end }}
-      </ul>
-    </nav>
-  </header>
-  
+  <nav class="max-w-7xl mx-auto flex justify-between items-center">
+    <!-- Logo -->
+    <div class="text-2xl font-bold">
+      <a href="{{ "/" | relLangURL }}" class="hover:text-gray-400">EchoSlate</a>
+    </div>
+
+    <!-- Navigation Menu -->
+    <ul class="flex space-x-4">
+      {{ range .Site.Menus.main }}
+        <li>
+          <a href="{{ .URL | relLangURL }}" class="hover:text-gray-400">{{ .Name }}</a>
+        </li>
+      {{ end }}
+    </ul>
+
+    <!-- Language Switcher -->
+    {{ partial "langswitcher.html" . }}
+  </nav>
+</header>

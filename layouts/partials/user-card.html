@@ -3,7 +3,6 @@
     <div class="p-4">
       <h3 class="text-xl font-semibold">{{ .Title }}</h3>
       <p class="text-gray-600 dark:text-gray-400">{{ .Params.description }}</p>
-      <a href="{{ .RelPermalink }}" class="text-blue-500 hover:underline mt-2 block">View Profile</a>
+      <a href="{{ .RelPermalink }}" class="text-blue-500 hover:underline mt-2 block">{{ i18n "viewProfile" }}</a>
     </div>
   </div>
-  

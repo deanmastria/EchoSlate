@@ -1,25 +1,25 @@
 <div class="hero-content">
     <section class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
-        <div class="text-center">
-          <h1 class="text-6xl font-extrabold mb-6">Welcome to EchoSlate</h1>
-          <p class="text-xl mb-8">Your digital portfolio to showcase resumes and projects.</p>
-          <a href="/es/users/" class="bg-white text-blue-600 px-6 py-3 rounded-full hover:bg-blue-200 transition duration-300">Explore Users</a>
-        </div>
-      </section>
-      
-    <!-- Login Form -->
+      <div class="text-center">
+        <h1 class="text-6xl font-extrabold mb-6">{{ i18n "welcomeMessage" }}</h1>
+        <p class="text-xl mb-8">{{ i18n "welcomeSubtitle" }}</p>
+        <a href="/users/" class="bg-white text-blue-600 px-6 py-3 rounded-full hover:bg-blue-200 transition duration-300">{{ i18n "exploreUsers" }}</a>
+      </div>
+    </section>
+  
     <form id="login-form">
-      <h2>Login</h2>
-      <input type="text" name="username" placeholder="Username" required>
-      <input type="password" name="password" placeholder="Password" required>
-      <button type="submit">Login</button>
+      <h2>{{ i18n "loginTitle" }}</h2>
+      <input type="text" name="username" placeholder="{{ i18n "usernamePlaceholder" }}" required>
+      <input type="password" name="password" placeholder="{{ i18n "passwordPlaceholder" }}" required>
+      <button type="submit">{{ i18n "loginButton" }}</button>
     </form>
+  
     <!-- Register Form -->
     <form id="register-form">
-      <h2>Register</h2>
-      <input type="text" name="new-username" placeholder="Username" required>
-      <input type="password" name="new-password" placeholder="Password" required>
-      <button type="submit">Register</button>
+      <h2>{{ i18n "registerTitle" }}</h2>
+      <input type="text" name="new-username" placeholder="{{ i18n "newUsernamePlaceholder" }}" required>
+      <input type="password" name="new-password" placeholder="{{ i18n "newPasswordPlaceholder" }}" required>
+      <button type="submit">{{ i18n "registerButton" }}</button>
     </form>
   </div>
   
