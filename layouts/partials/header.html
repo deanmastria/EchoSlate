@@ -1,20 +1,39 @@
 <header class="bg-gray-800 text-white p-4 fixed w-full z-10">
-  <nav class="max-w-7xl mx-auto flex justify-between items-center">
-    <!-- Logo -->
-    <div class="text-2xl font-bold">
-      <a href="{{ "/" | relLangURL }}" class="hover:text-gray-400">EchoSlate</a>
-    </div>
-
-    <!-- Navigation Menu -->
-    <ul class="flex space-x-4">
-      {{ range .Site.Menus.main }}
-        <li>
-          <a href="{{ .URL | relLangURL }}" class="hover:text-gray-400">{{ .Name }}</a>
-        </li>
-      {{ end }}
-    </ul>
-
-    <!-- Language Switcher -->
-    {{ partial "langswitcher.html" . }}
-  </nav>
-</header>
+    <nav class="max-w-7xl mx-auto flex justify-between items-center">
+      <!-- Logo acting as Home Link, glowing blue on Home page -->
+      <div class="text-2xl font-bold">
+        <a href="{{ "/" | relLangURL }}" 
+           class="{{ if .IsHome }}text-blue-500{{ else }}hover:text-gray-400{{ end }}">
+          EchoSlate
+        </a>
+      </div>
+  
+      <!-- Navigation Menu -->
+      <ul class="flex space-x-4">
+        {{ range .Site.Menus.main }}
+          <li>
+            <a href="{{ .URL | relLangURL }}" 
+               class="{{ if eq .URL $.RelPermalink }}text-blue-500{{ else }}text-white hover:text-gray-400{{ end }}">
+              {{ .Name }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+  
+      <!-- Language Switcher (Direct URL for Language Switch) -->
+      <div class="flex space-x-4">
+        <!-- English Language Link -->
+        <a href="/en/" 
+           class="{{ if eq .Lang "en" }}text-blue-500{{ else }}text-white hover:text-gray-400{{ end }}">
+          English
+        </a>
+  
+        <!-- Spanish Language Link -->
+        <a href="/es/" 
+           class="{{ if eq .Lang "es" }}text-blue-500{{ else }}text-white hover:text-gray-400{{ end }}">
+          Español
+        </a>
+      </div>
+    </nav>
+  </header>
+  

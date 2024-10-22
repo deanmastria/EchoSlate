@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/en/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=en/livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EchoSlate</title>
@@ -9,44 +9,117 @@
 <body class="bg-gray-100 dark:bg-gray-800 dark:text-white">
   <header class="bg-gray-800 text-white p-4 fixed w-full z-10">
     <nav class="max-w-7xl mx-auto flex justify-between items-center">
+      
       <div class="text-2xl font-bold">
-        <a href="/" class="hover:text-gray-400">EchoSlate</a>
+        <a href="/" 
+           class="hover:text-gray-400">
+          EchoSlate
+        </a>
       </div>
+  
+      
       <ul class="flex space-x-4">
         
-        <li><a href="/en/" class="hover:text-gray-400">Home</a></li>
+           
+            <li>
+              <a href="/en/users/" 
+                 class="text-white hover:text-gray-400">
+                Users
+              </a>
+            </li>
+          
         
-        <li><a href="/en/users/" class="hover:text-gray-400">Users</a></li>
+           
+            <li>
+              <a href="/en/edit/" 
+                 class="text-white hover:text-gray-400">
+                Edit
+              </a>
+            </li>
+          
         
-        <li><a href="/en/edit/" class="hover:text-gray-400">Edit</a></li>
+           
+            <li>
+              <a href="/en/upload/" 
+                 class="text-white hover:text-gray-400">
+                Upload
+              </a>
+            </li>
+          
         
-        <li><a href="/en/upload/" class="hover:text-gray-400">Upload</a></li>
+           
+            <li>
+              <a href="/en/search/" 
+                 class="text-blue-500">
+                Search
+              </a>
+            </li>
+          
         
-        <li><a href="/en/search/" class="hover:text-gray-400">Search</a></li>
+           
+            <li>
+              <a href="/en/about/" 
+                 class="text-white hover:text-gray-400">
+                About
+              </a>
+            </li>
+          
         
-        <li><a href="/en/about/" class="hover:text-gray-400">About</a></li>
-        
-        <li><a href="/en/contact/" class="hover:text-gray-400">Contact</a></li>
+           
+            <li>
+              <a href="/en/contact/" 
+                 class="text-white hover:text-gray-400">
+                Contact
+              </a>
+            </li>
+          
         
       </ul>
+  
+      
+      <div class="flex space-x-4">
+        
+        <a href="/en/en" 
+           class="text-blue-500">
+          English
+        </a>
+  
+        
+        <a href="/en/es" 
+           class="text-white hover:text-gray-400">
+          Español
+        </a>
+      </div>
     </nav>
   </header>
   
 
   <main class="py-16">
     
-  
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-8">Search</h1>
-    <div class="prose dark:prose-dark mb-8">
-      
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-6">Search</h1>
+
+    
+    <div class="relative">
+      <input
+        type="text"
+        id="search-input"
+        aria-label="Type to search..."
+        placeholder="Type to search..."
+        class="w-full p-3 border rounded shadow focus:outline-none focus:ring-2 focus:ring-blue-600 text-black"
+        style="color: black;"
+      >
     </div>
 
     
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div id="search-results" class="mt-6 space-y-4">
       
     </div>
   </section>
+
+  
+  <script src="/en/js/fuse.min.js"></script>
+  <script src="/en/js/search.js"></script>
 
   </main>
 
@@ -54,9 +127,9 @@
 
   <footer class="bg-gray-900 text-gray-400 py-8">
     <div class="max-w-7xl mx-auto text-center">
-      <p>&copy; 2024 EchoSlate. All rights reserved.</p>
+      <p>© 2024 EchoSlate. All rights reserved.</p>
     </div>
   </footer>
-  
+ 
 </body>
 </html>
