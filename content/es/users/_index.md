@@ -1,5 +1,7 @@
 +++
 title = "Usuarios"
+lang = "en"
+translationKey= "user-page"
 description = "Explora Currículums de Usuarios en EchoSlate"
 +++
 

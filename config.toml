@@ -2,7 +2,7 @@ baseURL = "http://example.com/"
 title = "EchoSlate"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false  # Avoid subdirectories for languages
+defaultContentLanguageInSubdir = false  
 enableMissingTranslationPlaceholders = true
 
 [outputs]

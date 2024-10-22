@@ -1,6 +1,8 @@
 +++
 title = "Edit Profile"
 description = "Edit Your EchoSlate Profile"
+lang = "en"
+translationKey= "edit-page"
 draft = false
 +++
 

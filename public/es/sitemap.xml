@@ -172,17 +172,5 @@
                 hreflang="es"
                 href="http://localhost:1313/es/categories/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/es/users/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/users/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/users/"
-                />
   </url>
 </urlset>
