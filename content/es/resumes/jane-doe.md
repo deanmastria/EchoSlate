@@ -1,11 +1,11 @@
----
-title: "Jane Doe"
-description: "Currículum de Desarrolladora Full Stack"
-date: 2024-10-18
-type: "resume"
-image: "/images/users/jane-doe.jpg"
-tags: ["Desarrollo Full Stack", "React", "Node.js"]
----
++++
+title = "Jane Doe"
+description = "Currículum de Desarrolladora Full Stack"
+date = 2024-10-18
+type = "resume"
+image = "/images/users/jane-doe.jpg"
+tags = ["Desarrollo Full Stack", "React", "Node.js"]
++++
 
 # Jane Doe
 

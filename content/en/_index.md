@@ -1,7 +1,7 @@
----
-title: "Home"
-description: "Welcome to EchoSlate - Your Digital Portfolio Platform"
----
++++
+title = "Home"
+description = "Welcome to EchoSlate - Your Digital Portfolio Platform"
++++
 
 # Welcome to EchoSlate
 

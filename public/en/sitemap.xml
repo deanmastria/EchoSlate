@@ -17,68 +17,15 @@
   </url><url>
     <loc>http://localhost:1313/home/</loc>
     <lastmod>2024-10-18T11:17:47-04:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/home/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/home/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/search/</loc>
-    <lastmod>2024-10-18T11:17:27-04:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/search/"
-                />
   </url><url>
     <loc>http://localhost:1313/upload/</loc>
     <lastmod>2024-10-18T11:17:07-04:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/upload/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/upload/"
-                />
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
     <lastmod>2024-10-18T11:14:26-04:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/contact/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/contact/"
-                />
   </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-10-18T11:14:10-04:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/about/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/full-stack-development/</loc>
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
@@ -161,16 +108,8 @@
                 />
   </url><url>
     <loc>http://localhost:1313/edit/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/edit/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/edit/"
-                />
+  </url><url>
+    <loc>http://localhost:1313/search/</loc>
   </url><url>
     <loc>http://localhost:1313/users/</loc>
     <xhtml:link

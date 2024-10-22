@@ -1,11 +1,11 @@
----
-title: "Jane Doe"
-description: "Full Stack Developer Resume"
-date: 2024-10-18
-type: "resume"
-image: "/images/users/jane-doe.jpg"
-tags: ["Full Stack Development", "React", "Node.js"]
----
++++
+title = "Jane Doe"
+description = "Full Stack Developer Resume"
+date = 2024-10-18
+type = "resume"
+image = "/images/users/jane-doe.jpg"
+tags = ["Full Stack Development", "React", "Node.js"]
++++
 
 # Jane Doe
 

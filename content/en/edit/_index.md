@@ -1,7 +1,8 @@
----
-title: "Edit Profile"
-description: "Edit Your EchoSlate Profile"
----
++++
+title = "Edit Profile"
+description = "Edit Your EchoSlate Profile"
+draft = false
++++
 
 # Edit Your Profile
 

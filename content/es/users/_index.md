@@ -1,7 +1,7 @@
----
-title: "Usuarios"
-description: "Explora Currículums de Usuarios en EchoSlate"
----
++++
+title = "Usuarios"
+description = "Explora Currículums de Usuarios en EchoSlate"
++++
 
 # Nuestros Usuarios
 

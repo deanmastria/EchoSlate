@@ -3,6 +3,7 @@ module.exports = {
   purge: [
     './layouts/**/*.html',
     './content/**/*.md',
+    './static/js/**/*.js',
   ],
   darkMode: 'media',
   theme: {

@@ -81,3 +81,12 @@ other = "Descubre oportunidades"
 
 [discoverOpportunitiesDescription]
 other = "Encuentra colaboraciones y proyectos que se ajusten a tus habilidades."
+
+[searchTitle]
+other = "Buscar"
+
+[searchPlaceholder]
+other = "Escribe para buscar..."
+
+[noResults]
+other = "No se encontraron resultados."

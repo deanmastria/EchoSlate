@@ -1,11 +1,20 @@
 baseURL = "http://example.com/"
-languageCode = "en-us"
 title = "EchoSlate"
-theme = "ananke"  
+languageCode = "en-us"
 defaultContentLanguage = "en"
-enableMissingTranslationPlaceholders = true  # Helps identify missing translations
+defaultContentLanguageInSubdir = false
+enableMissingTranslationPlaceholders = true
 
-# Language Configuration
+[outputs]
+  home = ["HTML", "SearchIndex"]
+
+[outputFormats]
+  [outputFormats.SearchIndex]
+    name = "SearchIndex"
+    mediaType = "application/json"
+    baseName = "index"
+    isPlainText = true
+
 [languages]
   [languages.en]
     languageName = "English"
@@ -14,6 +23,50 @@ enableMissingTranslationPlaceholders = true  # Helps identify missing translatio
     contentDir = "content/en"
     [languages.en.params]
       description = "A digital portfolio website to showcase resumes and projects."
+    [languages.en.outputs]
+      home = ["HTML", "SearchIndex"]
+
+    [[languages.en.menu.main]]
+      identifier = "home"
+      name = "home"
+      url = "/"
+      weight = 1
+
+    [[languages.en.menu.main]]
+      identifier = "users"
+      name = "users"
+      url = "/users/"
+      weight = 2
+
+    [[languages.en.menu.main]]
+      identifier = "edit"
+      name = "edit"
+      url = "/edit/"
+      weight = 3
+
+    [[languages.en.menu.main]]
+      identifier = "upload"
+      name = "upload"
+      url = "/upload/"
+      weight = 4
+
+    [[languages.en.menu.main]]
+      identifier = "search"
+      name = "search"
+      url = "/search/"
+      weight = 5
+
+    [[languages.en.menu.main]]
+      identifier = "about"
+      name = "about"
+      url = "/about/"
+      weight = 6
+
+    [[languages.en.menu.main]]
+      identifier = "contact"
+      name = "contact"
+      url = "/contact/"
+      weight = 7
 
   [languages.es]
     languageName = "Español"
@@ -22,53 +75,51 @@ enableMissingTranslationPlaceholders = true  # Helps identify missing translatio
     contentDir = "content/es"
     [languages.es.params]
       description = "Un sitio web de portafolio digital para mostrar currículums y proyectos."
+    [languages.es.outputs]
+      home = ["HTML", "SearchIndex"]
 
-# Menus Configuration
-[menu]
+    [[languages.es.menu.main]]
+      identifier = "home"
+      name = "home"
+      url = "/es/"
+      weight = 1
 
-  [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
+    [[languages.es.menu.main]]
+      identifier = "users"
+      name = "users"
+      url = "/es/users/"
+      weight = 2
 
-  [[menu.main]]
-    identifier = "users"
-    name = "Users"
-    url = "/users/"
-    weight = 2
+    [[languages.es.menu.main]]
+      identifier = "edit"
+      name = "edit"
+      url = "/es/edit/"
+      weight = 3
 
-  [[menu.main]]
-    identifier = "edit"
-    name = "Edit"
-    url = "/edit/"
-    weight = 3
+    [[languages.es.menu.main]]
+      identifier = "upload"
+      name = "upload"
+      url = "/es/upload/"
+      weight = 4
 
-  [[menu.main]]
-    identifier = "upload"
-    name = "Upload"
-    url = "/upload/"
-    weight = 4
+    [[languages.es.menu.main]]
+      identifier = "search"
+      name = "search"
+      url = "/es/search/"
+      weight = 5
 
-  [[menu.main]]
-    identifier = "search"
-    name = "Search"
-    url = "/search/"
-    weight = 5
+    [[languages.es.menu.main]]
+      identifier = "about"
+      name = "about"
+      url = "/es/about/"
+      weight = 6
+      
+    [[languages.es.menu.main]]
+      identifier = "contact"
+      name = "contact"
+      url = "/es/contact/"
+      weight = 7
 
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 6
-
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
-    weight = 7
-
-# Markup Configuration
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
