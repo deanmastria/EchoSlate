@@ -98,23 +98,6 @@
         <a href="/users/" class="bg-white text-blue-600 px-6 py-3 rounded-full hover:bg-blue-200 transition duration-300">Explorar Usuarios</a>
       </div>
     </section>
-  
-    <form id="login-form">
-      <h2>Iniciar sesión</h2>
-      <input type="text" name="username" placeholder="Nombre de usuario" required>
-      <input type="password" name="password" placeholder="Contraseña" required>
-      <button type="submit">Iniciar sesión</button>
-    </form>
-  
-    
-    <form id="register-form">
-      <h2>Registrarse</h2>
-      <input type="text" name="new-username" placeholder="Nuevo nombre de usuario" required>
-      <input type="password" name="new-password" placeholder="Nueva contraseña" required>
-      <button type="submit">Registrarse</button>
-    </form>
-  </div>
-  
 
   
 <section class="py-12">
@@ -129,16 +112,14 @@
 <p><a href="/es/users/">Comenzar</a>   |   <a href="/es/about/">Más Información</a></p>
 
     </div>
-    </section>
+</section>
 
-    
+
 <section class="bg-gray-100 dark:bg-gray-900 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
-        <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white">Why Choose EchoSlate?</h2>
-        <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
-          A platform designed for developers and analysts to showcase their talents.
-        </p>
+        <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white">¿Por qué elegir EchoSlate?</h2>
+        <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">Una plataforma diseñada para desarrolladores y analistas para mostrar sus talentos.</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
@@ -149,10 +130,8 @@
               
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Showcase Your Work</h3>
-          <p class="mt-2 text-gray-600 dark:text-gray-300">
-            Create a profile to highlight your projects and achievements.
-          </p>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Muestra tu trabajo</h3>
+          <p class="mt-2 text-gray-600 dark:text-gray-300">Crea un perfil para destacar tus proyectos y logros.</p>
         </div>
         
         <div class="text-center">
@@ -162,10 +141,8 @@
               
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Connect with Peers</h3>
-          <p class="mt-2 text-gray-600 dark:text-gray-300">
-            Engage with a community of professionals in your field.
-          </p>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Conéctate con colegas</h3>
+          <p class="mt-2 text-gray-600 dark:text-gray-300">Involúcrate con una comunidad de profesionales en tu campo.</p>
         </div>
         
         <div class="text-center">
@@ -175,20 +152,42 @@
               
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Discover Opportunities</h3>
-          <p class="mt-2 text-gray-600 dark:text-gray-300">
-            Find collaborations and projects that match your skills.
-          </p>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Descubre oportunidades</h3>
+          <p class="mt-2 text-gray-600 dark:text-gray-300">Encuentra colaboraciones y proyectos que se ajusten a tus habilidades.</p>
         </div>
       </div>
     </div>
   </section>
 
 
-  
-  </main>
+<section class="py-16 bg-gray-100 dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="text-center bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Login</h3>
+                <form id="loginForm">
+                    <input type="text" id="loginEmail" class="w-full p-2 mb-4 bg-gray-200 dark:bg-gray-700 text-black dark:text-white placeholder-gray-400 dark:placeholder-gray-500 rounded" placeholder="Username">
+                    <input type="password" id="loginPassword" class="w-full p-2 mb-4 bg-gray-200 dark:bg-gray-700 text-black dark:text-white placeholder-gray-400 dark:placeholder-gray-500 rounded" placeholder="Password">
+                    <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition">Login</button>
+                </form>
+            </div>
 
-  
+            
+            <div class="text-center bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Register</h3>
+                <form id="registerForm">
+                    <input type="text" id="registerEmail" class="w-full p-2 mb-4 bg-gray-200 dark:bg-gray-700 text-black dark:text-white placeholder-gray-400 dark:placeholder-gray-500 rounded" placeholder="New Username">
+                    <input type="password" id="registerPassword" class="w-full p-2 mb-4 bg-gray-200 dark:bg-gray-700 text-black dark:text-white placeholder-gray-400 dark:placeholder-gray-500 rounded" placeholder="New Password">
+                    <button type="submit" class="w-full bg-green-500 text-white p-2 rounded hover:bg-green-600 transition">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  </main>
 
   <footer class="bg-gray-900 text-gray-400 py-8">
     <div class="max-w-7xl mx-auto text-center">
@@ -196,5 +195,23 @@
     </div>
   </footer>
  
+
+  
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyA9w_PQS8HnG4q4PjW8fQN1isBzftDeZBE",
+      authDomain: "testechoslate.firebaseapp.com",
+      projectId: "testechoslate",
+      storageBucket: "testechoslate.appspot.com",
+      messagingSenderId: "987831629951",
+      appId: "1:987831629951:web:f37aeba48e5fc10b6ce74a"
+    };
+    const app = initializeApp(firebaseConfig);
+    console.log("Firebase initialized");
+  </script>
+
+  
+  <script type="module" src="/js/auth.js"></script>
 </body>
 </html>

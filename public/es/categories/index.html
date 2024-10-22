@@ -100,14 +100,7 @@
     </div>
   </section>
 
-    <div style="overflow:auto; max-height:300px; border:1px solid #ccc;">
-        <h3>Translations Debug:</h3>
-        <pre>[{"Date":"0001-01-01T00:00:00Z","Lastmod":"0001-01-01T00:00:00Z","PublishDate":"0001-01-01T00:00:00Z","ExpiryDate":"0001-01-01T00:00:00Z","Aliases":null,"BundleType":"branch","Description":"","Draft":false,"IsHome":false,"Keywords":null,"Kind":"taxonomy","Layout":"","LinkTitle":"Categories","IsNode":true,"IsPage":false,"Path":"/categories","Slug":"","Lang":"en","IsSection":false,"Section":"categories","Sitemap":{"ChangeFreq":"","Priority":-1,"Filename":"sitemap.xml","Disable":false},"Type":"categories","Weight":0}]</pre>
-      </div>
-      
   </main>
-
-  
 
   <footer class="bg-gray-900 text-gray-400 py-8">
     <div class="max-w-7xl mx-auto text-center">
@@ -115,5 +108,23 @@
     </div>
   </footer>
  
+
+  
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyA9w_PQS8HnG4q4PjW8fQN1isBzftDeZBE",
+      authDomain: "testechoslate.firebaseapp.com",
+      projectId: "testechoslate",
+      storageBucket: "testechoslate.appspot.com",
+      messagingSenderId: "987831629951",
+      appId: "1:987831629951:web:f37aeba48e5fc10b6ce74a"
+    };
+    const app = initializeApp(firebaseConfig);
+    console.log("Firebase initialized");
+  </script>
+
+  
+  <script type="module" src="/js/auth.js"></script>
 </body>
 </html>

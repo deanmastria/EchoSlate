@@ -10,11 +10,56 @@
   {{ partial "header.html" . }}
 
   <main class="py-16">
-    {{ block "main" . }}{{ end }}
+    {{ block "main" . }}
+    
+    <!-- Login Form -->
+    <section class="py-16 bg-gray-100 dark:bg-gray-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Login Form -->
+          <div class="text-center bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Login</h3>
+            <form id="loginForm">
+              <input type="email" id="loginEmail" class="w-full p-2 mb-4 bg-gray-200 dark:bg-gray-700 text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-300 rounded" placeholder="Username" required>
+              <input type="password" id="loginPassword" class="w-full p-2 mb-4 bg-gray-200 dark:bg-gray-700 text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-300 rounded" placeholder="Password" required>
+              <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition">Login</button>
+            </form>
+          </div>
+
+          <!-- Register Form -->
+          <div class="text-center bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Register</h3>
+            <form id="registerForm">
+              <input type="email" id="registerEmail" class="w-full p-2 mb-4 bg-gray-200 dark:bg-gray-700 text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-300 rounded" placeholder="New Username" required>
+              <input type="password" id="registerPassword" class="w-full p-2 mb-4 bg-gray-200 dark:bg-gray-700 text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-300 rounded" placeholder="New Password" required>
+              <button type="submit" class="w-full bg-green-500 text-white p-2 rounded hover:bg-green-600 transition">Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{ end }}
   </main>
 
-  
-
   {{ partial "footer.html" . }}
+
+  <!-- Firebase SDK Initialization -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyA9w_PQS8HnG4q4PjW8fQN1isBzftDeZBE",
+      authDomain: "testechoslate.firebaseapp.com",
+      projectId: "testechoslate",
+      storageBucket: "testechoslate.appspot.com",
+      messagingSenderId: "987831629951",
+      appId: "1:987831629951:web:f37aeba48e5fc10b6ce74a"
+    };
+    const app = initializeApp(firebaseConfig);
+    console.log("Firebase initialized");
+  </script>
+
+  <!-- Link the external auth.js file -->
+  <script type="module" src="/js/auth.js"></script>
 </body>
 </html>
