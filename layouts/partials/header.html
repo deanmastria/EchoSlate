@@ -20,16 +20,18 @@
         {{ end }}
       </ul>
   
-      <!-- Language Switcher (Direct URL for Language Switch) -->
+      <!-- Language Switcher (Keep user on the same page using .Translations) -->
       <div class="flex space-x-4">
         <!-- English Language Link -->
-        <a href="/en/" 
+        {{ $en := index .Translations 0 }}
+        <a href="{{ if $en }}{{ $en.RelPermalink }}{{ else }}{{ "/en/" | relLangURL }}{{ end }}" 
            class="{{ if eq .Lang "en" }}text-blue-500{{ else }}text-white hover:text-gray-400{{ end }}">
           English
         </a>
   
         <!-- Spanish Language Link -->
-        <a href="/es/" 
+        {{ $es := index .Translations 1 }}
+        <a href="{{ if $es }}{{ $es.RelPermalink }}{{ else }}{{ "/es/" | relLangURL }}{{ end }}" 
            class="{{ if eq .Lang "es" }}text-blue-500{{ else }}text-white hover:text-gray-400{{ end }}">
           Español
         </a>
