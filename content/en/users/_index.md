@@ -1,11 +1,15 @@
 +++
 title = "Users"
-lang = "en"
-translationKey = "users-page"
+description = "List of users and their resumes."
 draft = false
 +++
 
-# Our Users
-Explore the profiles of users showcasing their projects and resumes.
+# Users
 
+Browse through all user resumes below.
 
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {{ range .Pages }}
+    {{ partial "resume-card.html" . }}
+  {{ end }}
+</div>

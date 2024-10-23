@@ -3,7 +3,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Users | EchoSlate</title>
+  <title>Edit Profile | EchoSlate</title>
   <link rel="stylesheet" href="/css/styles.css">
   
 </head>
@@ -25,7 +25,7 @@
             
                 <li>
                     <a href="/users/" 
-                       class="text-blue-500">
+                       class="text-white hover:text-gray-400">
                         Users
                     </a>
                 </li>
@@ -60,7 +60,7 @@
             
                 <li>
                     <a href="/contact/" 
-                       class="text-white hover:text-gray-400">
+                       class="text-blue-500">
                         Contact
                     </a>
                 </li>
@@ -90,7 +90,7 @@
             <div class="flex space-x-4">
                 
                 
-                <a href="/es/users/" 
+                <a href="/es/contact/" 
                    class="text-blue-500">
                     English
                 </a>
@@ -115,20 +115,28 @@
     <main class="py-16">
       
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-  <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-8">Users</h1>
+  <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-8">Edit Profile</h1>
   <div class="prose dark:prose-dark mb-8">
     <h1 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-4xl font-bold">
-  Users
+  Edit Your Profile
 </h1>
-<p>Browse through all user resumes below.</p>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-  {{ range .Pages }}
-    {{ partial "resume-card.html" . }}
-  {{ end }}
-</div>
+<p>Update your personal information, add new projects, and manage your resume.</p>
+<ul>
+<li><strong>Personal Details</strong>: Update your name, contact info, and summary.</li>
+<li><strong>Projects</strong>: Add or remove projects you&rsquo;ve worked on.</li>
+<li><strong>Resume</strong>: Upload a new resume or update existing one.</li>
+</ul>
+<p><a href="/dashboard/" class="text-blue-600 hover:text-blue-800 underline">
+    Save Changes
+  </a>
+  </p>
 
   </div>
+
   
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+  </div>
 </section>
 
     </main>

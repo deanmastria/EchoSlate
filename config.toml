@@ -7,6 +7,9 @@ enableMissingTranslationPlaceholders = true
 
 [outputs]
   home = ["HTML", "SearchIndex"]
+  section = ["HTML"]
+  page = ["HTML"]
+  list = ["HTML"]
 
 [outputFormats]
   [outputFormats.SearchIndex]
@@ -25,6 +28,9 @@ enableMissingTranslationPlaceholders = true
       description = "A digital portfolio website to showcase resumes and projects."
     [languages.en.outputs]
       home = ["HTML", "SearchIndex"]
+      section = ["HTML"]
+      page = ["HTML"]
+      list = ["HTML"]
 
     [[languages.en.menu.main]]
       identifier = "users"
@@ -71,6 +77,9 @@ enableMissingTranslationPlaceholders = true
       description = "Un sitio web de portafolio digital para mostrar currículums y proyectos."
     [languages.es.outputs]
       home = ["HTML", "SearchIndex"]
+      section = ["HTML"]
+      page = ["HTML"]
+      list = ["HTML"]
 
     [[languages.es.menu.main]]
       identifier = "users"

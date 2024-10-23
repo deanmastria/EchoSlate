@@ -2,7 +2,7 @@
 title = "Search"
 type = "search"
 lang = "en"
-translationKey= "search-page"
+translationKey = "search-page"
 draft = false
 +++
 

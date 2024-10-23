@@ -3,7 +3,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Users | EchoSlate</title>
+  <title>Tags | EchoSlate</title>
   <link rel="stylesheet" href="/css/styles.css">
   
 </head>
@@ -25,7 +25,7 @@
             
                 <li>
                     <a href="/users/" 
-                       class="text-blue-500">
+                       class="text-white hover:text-gray-400">
                         Users
                     </a>
                 </li>
@@ -90,7 +90,7 @@
             <div class="flex space-x-4">
                 
                 
-                <a href="/es/users/" 
+                <a href="/es/tags/" 
                    class="text-blue-500">
                     English
                 </a>
@@ -115,20 +115,30 @@
     <main class="py-16">
       
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-  <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-8">Users</h1>
+  <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-8">Tags</h1>
   <div class="prose dark:prose-dark mb-8">
-    <h1 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-4xl font-bold">
-  Users
-</h1>
-<p>Browse through all user resumes below.</p>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-  {{ range .Pages }}
-    {{ partial "resume-card.html" . }}
-  {{ end }}
-</div>
-
+    
   </div>
+
   
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold mb-2"><a href="http://localhost:1313/tags/full-stack-development/">Full Stack Development</a></h2>
+        <p></p>
+      </div>
+    
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold mb-2"><a href="http://localhost:1313/tags/node.js/">Node.js</a></h2>
+        <p></p>
+      </div>
+    
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+        <h2 class="text-xl font-semibold mb-2"><a href="http://localhost:1313/tags/react/">React</a></h2>
+        <p></p>
+      </div>
+    
+  </div>
 </section>
 
     </main>

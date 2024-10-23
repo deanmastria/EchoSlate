@@ -1,8 +1,6 @@
 +++
 title = "Edit Profile"
 description = "Edit Your EchoSlate Profile"
-lang = "en"
-translationKey= "edit-page"
 draft = false
 +++
 
@@ -15,4 +13,3 @@ Update your personal information, add new projects, and manage your resume.
 - **Resume**: Upload a new resume or update existing one.
 
 [Save Changes](/dashboard/)
-

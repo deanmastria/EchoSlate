@@ -1,9 +1,15 @@
 +++
-title = 'About'
-date = 2024-10-18T11:14:10-04:00
-lang = "en"
-translationKey= "about-page"
+title = "Edit Profile"
+description = "Edit Your EchoSlate Profile"
 draft = false
 +++
 
-Welcome to the About Us page. Here you can find more information about our mission and team.
+# Edit Your Profile
+
+Update your personal information, add new projects, and manage your resume.
+
+- **Personal Details**: Update your name, contact info, and summary.
+- **Projects**: Add or remove projects you've worked on.
+- **Resume**: Upload a new resume or update existing one.
+
+[Save Changes](/dashboard/)
