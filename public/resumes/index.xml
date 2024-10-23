@@ -3,6 +3,7 @@
   <channel>
     <title>Resumes on EchoSlate</title>
     <link>http://localhost:1313/resumes/</link>
+    <link>http://localhost:1313/resumes/</link>
     <description>Recent content in Resumes on EchoSlate</description>
     <generator>Hugo</generator>
     <language>en</language>

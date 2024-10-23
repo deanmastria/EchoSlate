@@ -2,7 +2,7 @@ baseURL = "http://example.com/"
 title = "EchoSlate"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = false  
 enableMissingTranslationPlaceholders = true
 
 [outputs]
@@ -27,44 +27,38 @@ enableMissingTranslationPlaceholders = true
       home = ["HTML", "SearchIndex"]
 
     [[languages.en.menu.main]]
-      identifier = "home"
-      name = "home"
-      url = "/"
-      weight = 1
-
-    [[languages.en.menu.main]]
       identifier = "users"
-      name = "users"
+      name = "Users"
       url = "/users/"
       weight = 2
 
     [[languages.en.menu.main]]
       identifier = "edit"
-      name = "edit"
+      name = "Edit"
       url = "/edit/"
       weight = 3
 
     [[languages.en.menu.main]]
       identifier = "upload"
-      name = "upload"
+      name = "Upload"
       url = "/upload/"
       weight = 4
 
     [[languages.en.menu.main]]
       identifier = "search"
-      name = "search"
+      name = "Search"
       url = "/search/"
       weight = 5
 
     [[languages.en.menu.main]]
       identifier = "about"
-      name = "about"
+      name = "About"
       url = "/about/"
       weight = 6
 
     [[languages.en.menu.main]]
       identifier = "contact"
-      name = "contact"
+      name = "Contact"
       url = "/contact/"
       weight = 7
 
@@ -79,44 +73,38 @@ enableMissingTranslationPlaceholders = true
       home = ["HTML", "SearchIndex"]
 
     [[languages.es.menu.main]]
-      identifier = "home"
-      name = "home"
-      url = "/es/"
-      weight = 1
-
-    [[languages.es.menu.main]]
       identifier = "users"
-      name = "users"
+      name = "Usuarios"
       url = "/es/users/"
       weight = 2
 
     [[languages.es.menu.main]]
       identifier = "edit"
-      name = "edit"
+      name = "Editar"
       url = "/es/edit/"
       weight = 3
 
     [[languages.es.menu.main]]
       identifier = "upload"
-      name = "upload"
+      name = "Subir"
       url = "/es/upload/"
       weight = 4
 
     [[languages.es.menu.main]]
       identifier = "search"
-      name = "search"
+      name = "Buscar"
       url = "/es/search/"
       weight = 5
 
     [[languages.es.menu.main]]
       identifier = "about"
-      name = "about"
+      name = "Acerca de"
       url = "/es/about/"
       weight = 6
-      
+
     [[languages.es.menu.main]]
       identifier = "contact"
-      name = "contact"
+      name = "Contacto"
       url = "/es/contact/"
       weight = 7
 

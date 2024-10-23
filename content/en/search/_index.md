@@ -1,6 +1,8 @@
 +++
 title = "Search"
 type = "search"
+lang = "en"
+translationKey= "search-page"
 draft = false
 +++
 
