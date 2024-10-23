@@ -6,6 +6,7 @@ module.exports = {
     './content/**/*.md',
     './static/js/**/*.js',
     './assets/js/**/*.js',
+    './**/*.html',
   ],
   theme: {
     extend: {},

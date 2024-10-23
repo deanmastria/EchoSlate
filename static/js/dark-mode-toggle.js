@@ -2,32 +2,31 @@ document.addEventListener('DOMContentLoaded', function () {
     const darkModeToggle = document.getElementById('dark-mode-toggle');
     const sunIcon = document.getElementById('sun-icon');
     const moonIcon = document.getElementById('moon-icon');
-    const body = document.body; // Target the body element for class toggling
-
-    // Check for saved preference in localStorage
+    
     if (localStorage.getItem('theme') === 'dark') {
-        body.classList.add('dark');
-        sunIcon.classList.add('hidden');
-        moonIcon.classList.remove('hidden');
+      document.documentElement.classList.add('dark');
+      sunIcon.classList.add('hidden');
+      moonIcon.classList.remove('hidden');
+      console.log('Dark mode enabled'); // Debugging log
     } else {
-        body.classList.remove('dark');
-        sunIcon.classList.remove('hidden');
-        moonIcon.classList.add('hidden');
+      document.documentElement.classList.remove('dark');
+      sunIcon.classList.remove('hidden');
+      moonIcon.classList.add('hidden');
+      console.log('Dark mode disabled'); // Debugging log
     }
-
-    // Toggle dark mode on button click
+  
     darkModeToggle.addEventListener('click', function () {
-        body.classList.toggle('dark');
-
-        // Toggle icons
-        sunIcon.classList.toggle('hidden');
-        moonIcon.classList.toggle('hidden');
-
-        // Save preference in localStorage
-        if (body.classList.contains('dark')) {
-            localStorage.setItem('theme', 'dark');
-        } else {
-            localStorage.setItem('theme', 'light');
-        }
+      document.documentElement.classList.toggle('dark');
+      sunIcon.classList.toggle('hidden');
+      moonIcon.classList.toggle('hidden');
+  
+      if (document.documentElement.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+        console.log('Dark mode activated');
+      } else {
+        localStorage.setItem('theme', 'light');
+        console.log('Dark mode deactivated');
+      }
     });
-});
+  });
+  
