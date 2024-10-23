@@ -52,36 +52,32 @@ document.addEventListener('DOMContentLoaded', function () {
     
       if (results.length > 0) {
         results.forEach(result => {
-          try {
-            const item = result.item;
+          const item = result.item;
     
-            const resultItem = document.createElement('div');
-            resultItem.classList.add('p-4', 'bg-white', 'rounded', 'shadow');
+          const resultItem = document.createElement('div');
+          resultItem.classList.add('p-4', 'bg-white', 'rounded', 'shadow');
     
-            const title = document.createElement('h2');
-            title.classList.add('text-xl', 'font-semibold', 'mb-2');
-            title.innerHTML = `<a href="${item.permalink}" class="hover:underline text-black">${item.title}</a>`;
+          const title = document.createElement('h2');
+          title.classList.add('text-xl', 'font-semibold', 'mb-2');
+          title.innerHTML = `<a href="${item.permalink}" class="hover:underline text-black">${item.title}</a>`;
     
-            const excerpt = document.createElement('p');
-            excerpt.classList.add('text-black');
-            excerpt.textContent = item.content.substring(0, 200) + '...';
+          const excerpt = document.createElement('p');
+          excerpt.classList.add('text-black');
+          excerpt.textContent = item.content.substring(0, 200) + '...';
     
-            resultItem.appendChild(title);
-            resultItem.appendChild(excerpt);
+          resultItem.appendChild(title);
+          resultItem.appendChild(excerpt);
     
-            searchResults.appendChild(resultItem);
-          } catch (error) {
-            console.error('Error displaying result:', error);
-          }
+          searchResults.appendChild(resultItem);
         });
       } else {
         const noResults = document.createElement('p');
-        noResults.classList.add('text-gray-600');
+        noResults.classList.add('text-black');
         noResults.textContent = getTranslation('noResults', lang);
         searchResults.appendChild(noResults);
       }
     }
-
+    
   function getTranslation(key, lang) {
     const translations = {
       en: {

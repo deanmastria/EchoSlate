@@ -1,18 +1,16 @@
 // tailwind.config.js
 module.exports = {
-  purge: [
+  darkMode: 'class', // Enable class-based dark mode for toggle
+  content: [
     './layouts/**/*.html',
     './content/**/*.md',
     './static/js/**/*.js',
+    './assets/js/**/*.js',
   ],
-  darkMode: 'media',
   theme: {
     extend: {},
   },
-  variants: {
-    extend: {},
-  },
   plugins: [
-    require('@tailwindcss/typography'), // Add this line
+    require('@tailwindcss/typography'),
   ],
 }

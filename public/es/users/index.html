@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=58493&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63845&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EchoSlate</title>
+  <title>Usuarios | EchoSlate</title>
   <link rel="stylesheet" href="/css/styles.css">
+  
 </head>
-<body class="bg-gray-100 dark:bg-gray-800 dark:text-white">
-  <header class="bg-gray-800 text-white p-4 fixed w-full z-10">
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-white">
+  <header class="bg-gray-800 text-white p-4 fixed w-full z-10 dark:bg-gray-900">
   <nav class="max-w-7xl mx-auto flex justify-between items-center">
     
     <div class="text-2xl font-bold">
@@ -48,7 +49,26 @@
     </ul>
 
     
-    <div class="language-switcher">
+    <div class="flex items-center space-x-4">
+      
+      <button id="dark-mode-toggle" class="focus:outline-none" aria-label="Toggle dark mode">
+        <svg id="dark-mode-icon" class="w-6 h-6 text-white dark:text-yellow-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          
+          <path id="sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 2v2m6.364 1.636l-1.414 1.414M22 12h-2
+               M17.657 17.657l-1.414-1.414M12 22v-2
+               m-4.95-1.636l1.414-1.414M2 12h2
+               m1.636-4.95l1.414 1.414" />
+          
+          <path id="moon-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 12.79A9 9 0 0112.21 3
+               a9 9 0 100 18c4.63 0 8.44-3.5
+               8.79-7.9z" />
+        </svg>
+      </button>
+
+      
+      <div class="language-switcher">
     
       <a href="/es/en">English</a>
     
@@ -56,45 +76,26 @@
     
   </div>
   
+    </div>
   </nav>
 </header>
 
 
   <main class="py-16">
     
-  
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-8">Usuarios</h1>
-    <div class="prose dark:prose-dark mb-8">
-      <h1 id="nuestros-usuarios">Nuestros Usuarios</h1>
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-8">Usuarios</h1>
+  <div class="prose dark:prose-dark mb-8">
+    <h1 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-4xl font-bold">
+  Nuestros Usuarios
+</h1>
 <p>Explora los currículums de profesionales que muestran sus habilidades y experiencia.</p>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    
-      
-        <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden">
-  <img src="/images/users/jane-doe.jpg" alt="Jane Doe" class="w-full h-48 object-cover">
-  <div class="p-4">
-    <h3 class="text-xl font-semibold">Jane Doe</h3>
-    <p class="text-gray-600 dark:text-gray-400">Currículum de Desarrolladora Full Stack</p>
-    <a href="/es/resumes/jane-doe/" class="text-blue-500 hover:underline mt-2 block">Ver Currículum</a>
-  </div>
-</div>
-      
-    
+
   </div>
   
-
-    </div>
-
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      
-    </div>
-  </section>
+</section>
 
   </main>
-
-  
 
   <footer class="bg-gray-900 text-gray-400 py-8">
     <div class="max-w-7xl mx-auto text-center">
@@ -102,5 +103,9 @@
     </div>
   </footer>
  
+
+  
+  <script src="/js/dark-mode-toggle.js"></script>
+  
 </body>
 </html>

@@ -2,18 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Full Stack Development on EchoSlate</title>
-    <link>http://localhost:58493/tags/full-stack-development/</link>
+    <link>http://localhost:63845/tags/full-stack-development/</link>
     <description>Recent content in Full Stack Development on EchoSlate</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 18 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:58493/tags/full-stack-development/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:63845/tags/full-stack-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dean Mastria</title>
+      <link>http://localhost:63845/users/resumes/dean/</link>
+      <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63845/users/resumes/dean/</guid>
+      <description>&lt;h1 class=&#34;mt-6 mb-2 text-gray-900 dark:text-gray-100 text-4xl font-bold&#34;&gt;&#xD;&#xA;  Dean Mastria&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:jane.doe@example.com&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xD;&#xA;    jane.doe@example.com&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;  &lt;br&gt;&#xA;&lt;strong&gt;Phone:&lt;/strong&gt; (123) 456-7890&lt;br&gt;&#xA;&lt;strong&gt;Location:&lt;/strong&gt; San Francisco, CA, USA&lt;br&gt;&#xA;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=&#34;https://linkedin.com/in/deanmastria&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xD;&#xA;    linkedin.com/in/deanmastria&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;  &lt;br&gt;&#xA;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/deanmastria&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xD;&#xA;    github.com/deanmastria&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;  &lt;/p&gt;</description>
+    </item>
     <item>
       <title>Jane Doe</title>
-      <link>http://localhost:58493/resumes/jane-doe/</link>
+      <link>http://localhost:63845/users/resumes/jane-doe/</link>
       <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58493/resumes/jane-doe/</guid>
-      <description>&lt;h1 id=&#34;jane-doe&#34;&gt;Jane Doe&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:jane.doe@example.com&#34;&gt;jane.doe@example.com&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;Phone:&lt;/strong&gt; (123) 456-7890&lt;br&gt;&#xA;&lt;strong&gt;Location:&lt;/strong&gt; San Francisco, CA, USA&lt;br&gt;&#xA;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=&#34;https://linkedin.com/in/janedoe&#34;&gt;linkedin.com/in/janedoe&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/janedoe&#34;&gt;github.com/janedoe&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;professional-summary&#34;&gt;Professional Summary&lt;/h2&gt;&#xA;&lt;p&gt;Full Stack Developer with over 5 years of experience building web applications using JavaScript, Node.js, and React. Passionate about creating efficient, scalable applications with a focus on user experience and performance optimization.&lt;/p&gt;&#xA;&lt;h2 id=&#34;skills&#34;&gt;Skills&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Programming Languages:&lt;/strong&gt; JavaScript (ES6+), TypeScript, Python, Java&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Frameworks &amp;amp; Libraries:&lt;/strong&gt; React, Node.js, Express.js, Next.js&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Databases:&lt;/strong&gt; MongoDB, PostgreSQL, MySQL&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tools &amp;amp; Platforms:&lt;/strong&gt; Git, Docker, AWS, Jenkins, CI/CD&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Other:&lt;/strong&gt; RESTful APIs, GraphQL, Agile/Scrum, TDD/BDD&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;experience&#34;&gt;Experience&lt;/h2&gt;&#xA;&lt;h3 id=&#34;senior-full-stack-developer&#34;&gt;&lt;strong&gt;Senior Full Stack Developer&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;ABC Tech Solutions&lt;/strong&gt;, San Francisco, CA&lt;br&gt;&#xA;&lt;strong&gt;June 2020 – Present&lt;/strong&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:63845/users/resumes/jane-doe/</guid>
+      <description>&lt;h1 class=&#34;mt-6 mb-2 text-gray-900 dark:text-gray-100 text-4xl font-bold&#34;&gt;&#xD;&#xA;  Jane Doe&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:jane.doe@example.com&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xD;&#xA;    jane.doe@example.com&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;  &lt;br&gt;&#xA;&lt;strong&gt;Phone:&lt;/strong&gt; (123) 456-7890&lt;br&gt;&#xA;&lt;strong&gt;Location:&lt;/strong&gt; San Francisco, CA, USA&lt;br&gt;&#xA;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=&#34;https://linkedin.com/in/janedoe&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xD;&#xA;    linkedin.com/in/janedoe&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;  &lt;br&gt;&#xA;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/janedoe&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xD;&#xA;    github.com/janedoe&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;  &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Patrick Xiong</title>
+      <link>http://localhost:63845/users/resumes/patrick/</link>
+      <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63845/users/resumes/patrick/</guid>
+      <description>&lt;h1 class=&#34;mt-6 mb-2 text-gray-900 dark:text-gray-100 text-4xl font-bold&#34;&gt;&#xD;&#xA;  Jane Doe&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:jane.doe@example.com&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xD;&#xA;    jane.doe@example.com&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;  &lt;br&gt;&#xA;&lt;strong&gt;Phone:&lt;/strong&gt; (123) 456-7890&lt;br&gt;&#xA;&lt;strong&gt;Location:&lt;/strong&gt; San Francisco, CA, USA&lt;br&gt;&#xA;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=&#34;https://linkedin.com/in/janedoe&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xD;&#xA;    linkedin.com/in/janedoe&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;  &lt;br&gt;&#xA;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/janedoe&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xD;&#xA;    github.com/janedoe&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;  &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ryan Panagrosso</title>
+      <link>http://localhost:63845/users/resumes/ryan/</link>
+      <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63845/users/resumes/ryan/</guid>
+      <description>&lt;h1 class=&#34;mt-6 mb-2 text-gray-900 dark:text-gray-100 text-4xl font-bold&#34;&gt;&#xD;&#xA;  Jane Doe&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:jane.doe@example.com&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xD;&#xA;    jane.doe@example.com&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;  &lt;br&gt;&#xA;&lt;strong&gt;Phone:&lt;/strong&gt; (123) 456-7890&lt;br&gt;&#xA;&lt;strong&gt;Location:&lt;/strong&gt; San Francisco, CA, USA&lt;br&gt;&#xA;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=&#34;https://linkedin.com/in/janedoe&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xD;&#xA;    linkedin.com/in/janedoe&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;  &lt;br&gt;&#xA;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/janedoe&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xD;&#xA;    github.com/janedoe&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;  &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Simon Chang</title>
+      <link>http://localhost:63845/users/resumes/simon/</link>
+      <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63845/users/resumes/simon/</guid>
+      <description>&lt;h1 class=&#34;mt-6 mb-2 text-gray-900 dark:text-gray-100 text-4xl font-bold&#34;&gt;&#xD;&#xA;  Jane Doe&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:jane.doe@example.com&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xD;&#xA;    jane.doe@example.com&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;  &lt;br&gt;&#xA;&lt;strong&gt;Phone:&lt;/strong&gt; (123) 456-7890&lt;br&gt;&#xA;&lt;strong&gt;Location:&lt;/strong&gt; San Francisco, CA, USA&lt;br&gt;&#xA;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=&#34;https://linkedin.com/in/janedoe&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xD;&#xA;    linkedin.com/in/janedoe&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;  &lt;br&gt;&#xA;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/janedoe&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xD;&#xA;    github.com/janedoe&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;  &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Thomas Mulligan</title>
+      <link>http://localhost:63845/users/resumes/tommy/</link>
+      <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:63845/users/resumes/tommy/</guid>
+      <description>&lt;h1 class=&#34;mt-6 mb-2 text-gray-900 dark:text-gray-100 text-4xl font-bold&#34;&gt;&#xD;&#xA;  Jane Doe&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:jane.doe@example.com&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xD;&#xA;    jane.doe@example.com&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;  &lt;br&gt;&#xA;&lt;strong&gt;Phone:&lt;/strong&gt; (123) 456-7890&lt;br&gt;&#xA;&lt;strong&gt;Location:&lt;/strong&gt; San Francisco, CA, USA&lt;br&gt;&#xA;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=&#34;https://linkedin.com/in/janedoe&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xD;&#xA;    linkedin.com/in/janedoe&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;  &lt;br&gt;&#xA;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/janedoe&#34; class=&#34;text-blue-600 hover:text-blue-800 underline&#34;&gt;&#xD;&#xA;    github.com/janedoe&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;  &lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

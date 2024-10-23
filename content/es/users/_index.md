@@ -7,4 +7,4 @@ description = "Explora Currículums de Usuarios en EchoSlate"
 
 Explora los currículums de profesionales que muestran sus habilidades y experiencia.
 
-{{< resume-list >}}
+

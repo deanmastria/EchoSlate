@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=58493&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EchoSlate</title>
   <link rel="stylesheet" href="/css/styles.css">
+  
 </head>
 <body class="bg-gray-100 dark:bg-gray-800 dark:text-white">
-  <header class="bg-gray-800 text-white p-4 fixed w-full z-10">
+  <header class="bg-gray-800 text-white p-4 fixed w-full z-10 dark:bg-gray-900">
   <nav class="max-w-7xl mx-auto flex justify-between items-center">
     
     <div class="text-2xl font-bold">
@@ -48,7 +49,26 @@
     </ul>
 
     
-    <div class="language-switcher">
+    <div class="flex items-center space-x-4">
+      
+      <button id="dark-mode-toggle" class="focus:outline-none" aria-label="Toggle dark mode">
+        <svg id="dark-mode-icon" class="w-6 h-6 text-white dark:text-yellow-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          
+          <path id="sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 2v2m6.364 1.636l-1.414 1.414M22 12h-2
+               M17.657 17.657l-1.414-1.414M12 22v-2
+               m-4.95-1.636l1.414-1.414M2 12h2
+               m1.636-4.95l1.414 1.414" />
+          
+          <path id="moon-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 12.79A9 9 0 0112.21 3
+               a9 9 0 100 18c4.63 0 8.44-3.5
+               8.79-7.9z" />
+        </svg>
+      </button>
+
+      
+      <div class="language-switcher">
     
       <a href="/en">English</a>
     
@@ -56,6 +76,7 @@
     
   </div>
   
+    </div>
   </nav>
 </header>
 
@@ -73,11 +94,56 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       
         <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden">
+  <img src="/images/users/dean.jpg" alt="Dean Mastria" class="w-full h-48 object-cover">
+  <div class="p-4">
+    <h3 class="text-xl font-semibold">Dean Mastria</h3>
+    <p class="text-gray-600 dark:text-gray-400">Full Stack Developer Resume</p>
+    <a href="/resumes/dean/" class="text-blue-500 hover:underline mt-2 block">View Resume</a>
+  </div>
+</div>
+      
+        <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden">
   <img src="/images/users/jane-doe.jpg" alt="Jane Doe" class="w-full h-48 object-cover">
   <div class="p-4">
     <h3 class="text-xl font-semibold">Jane Doe</h3>
     <p class="text-gray-600 dark:text-gray-400">Full Stack Developer Resume</p>
     <a href="/resumes/jane-doe/" class="text-blue-500 hover:underline mt-2 block">View Resume</a>
+  </div>
+</div>
+      
+        <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden">
+  <img src="/images/users/jane-doe.jpg" alt="Patrick Xiong" class="w-full h-48 object-cover">
+  <div class="p-4">
+    <h3 class="text-xl font-semibold">Patrick Xiong</h3>
+    <p class="text-gray-600 dark:text-gray-400">Full Stack Developer Resume</p>
+    <a href="/resumes/patrick/" class="text-blue-500 hover:underline mt-2 block">View Resume</a>
+  </div>
+</div>
+      
+        <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden">
+  <img src="/images/users/jane-doe.jpg" alt="Ryan Panagrosso" class="w-full h-48 object-cover">
+  <div class="p-4">
+    <h3 class="text-xl font-semibold">Ryan Panagrosso</h3>
+    <p class="text-gray-600 dark:text-gray-400">Full Stack Developer Resume</p>
+    <a href="/resumes/ryan/" class="text-blue-500 hover:underline mt-2 block">View Resume</a>
+  </div>
+</div>
+      
+        <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden">
+  <img src="/images/users/jane-doe.jpg" alt="Simon Chang" class="w-full h-48 object-cover">
+  <div class="p-4">
+    <h3 class="text-xl font-semibold">Simon Chang</h3>
+    <p class="text-gray-600 dark:text-gray-400">Full Stack Developer Resume</p>
+    <a href="/resumes/simon/" class="text-blue-500 hover:underline mt-2 block">View Resume</a>
+  </div>
+</div>
+      
+        <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden">
+  <img src="/images/users/jane-doe.jpg" alt="Thomas Mulligan" class="w-full h-48 object-cover">
+  <div class="p-4">
+    <h3 class="text-xl font-semibold">Thomas Mulligan</h3>
+    <p class="text-gray-600 dark:text-gray-400">Full Stack Developer Resume</p>
+    <a href="/resumes/tommy/" class="text-blue-500 hover:underline mt-2 block">View Resume</a>
   </div>
 </div>
       
@@ -94,5 +160,11 @@
     </div>
   </footer>
  
+
+  <script src="/js/dark-mode-toggle.js"></script>
+  
 </body>
 </html>
+
+
+

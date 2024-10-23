@@ -1,4 +1,4 @@
-<header class="bg-gray-800 text-white p-4 fixed w-full z-10">
+<header class="bg-gray-800 text-white p-4 fixed w-full z-10 dark:bg-gray-900">
   <nav class="max-w-7xl mx-auto flex justify-between items-center">
     <!-- Logo -->
     <div class="text-2xl font-bold">
@@ -14,7 +14,27 @@
       {{ end }}
     </ul>
 
-    <!-- Language Switcher -->
-    {{ partial "langswitcher.html" . }}
+    <!-- Right Side: Dark Mode Toggle and Language Switcher -->
+    <div class="flex items-center space-x-4">
+      <!-- Dark Mode Toggle Button -->
+      <button id="dark-mode-toggle" class="focus:outline-none" aria-label="Toggle dark mode">
+        <svg id="dark-mode-icon" class="w-6 h-6 text-white dark:text-yellow-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <!-- Sun icon for light mode -->
+          <path id="sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 2v2m6.364 1.636l-1.414 1.414M22 12h-2
+               M17.657 17.657l-1.414-1.414M12 22v-2
+               m-4.95-1.636l1.414-1.414M2 12h2
+               m1.636-4.95l1.414 1.414" />
+          <!-- Moon icon for dark mode -->
+          <path id="moon-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 12.79A9 9 0 0112.21 3
+               a9 9 0 100 18c4.63 0 8.44-3.5
+               8.79-7.9z" />
+        </svg>
+      </button>
+
+      <!-- Language Switcher -->
+      {{ partial "langswitcher.html" . }}
+    </div>
   </nav>
 </header>

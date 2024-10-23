@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta name="generator" content="Hugo 0.135.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=58493&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.134.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63845&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EchoSlate</title>
+  <title>Inicio | EchoSlate</title>
   <link rel="stylesheet" href="/css/styles.css">
+  
 </head>
-<body class="bg-gray-100 dark:bg-gray-800 dark:text-white">
-  <header class="bg-gray-800 text-white p-4 fixed w-full z-10">
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-white">
+  <header class="bg-gray-800 text-white p-4 fixed w-full z-10 dark:bg-gray-900">
   <nav class="max-w-7xl mx-auto flex justify-between items-center">
     
     <div class="text-2xl font-bold">
@@ -49,7 +50,26 @@
     </ul>
 
     
-    <div class="language-switcher">
+    <div class="flex items-center space-x-4">
+      
+      <button id="dark-mode-toggle" class="focus:outline-none" aria-label="Toggle dark mode">
+        <svg id="dark-mode-icon" class="w-6 h-6 text-white dark:text-yellow-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          
+          <path id="sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 2v2m6.364 1.636l-1.414 1.414M22 12h-2
+               M17.657 17.657l-1.414-1.414M12 22v-2
+               m-4.95-1.636l1.414-1.414M2 12h2
+               m1.636-4.95l1.414 1.414" />
+          
+          <path id="moon-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 12.79A9 9 0 0112.21 3
+               a9 9 0 100 18c4.63 0 8.44-3.5
+               8.79-7.9z" />
+        </svg>
+      </button>
+
+      
+      <div class="language-switcher">
     
       <a href="/es/en">English</a>
     
@@ -57,6 +77,7 @@
     
   </div>
   
+    </div>
   </nav>
 </header>
 
@@ -73,35 +94,28 @@
         <a href="/users/" class="bg-white text-blue-600 px-6 py-3 rounded-full hover:bg-blue-200 transition duration-300">Explorar Usuarios</a>
       </div>
     </section>
-  
-    <form id="login-form">
-      <h2>Iniciar sesión</h2>
-      <input type="text" name="username" placeholder="Nombre de usuario" required>
-      <input type="password" name="password" placeholder="Contraseña" required>
-      <button type="submit">Iniciar sesión</button>
-    </form>
-  
-    
-    <form id="register-form">
-      <h2>Registrarse</h2>
-      <input type="text" name="new-username" placeholder="Nuevo nombre de usuario" required>
-      <input type="password" name="new-password" placeholder="Nueva contraseña" required>
-      <button type="submit">Registrarse</button>
-    </form>
-  </div>
+
   
 
   
 <section class="py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 prose dark:prose-dark">
-        <h1 id="bienvenido-a-echoslate">Bienvenido a EchoSlate</h1>
+        <h1 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-4xl font-bold">
+  Bienvenido a EchoSlate
+</h1>
 <p><strong>EchoSlate</strong> es tu plataforma digital para mostrar currículums y proyectos en <strong>Desarrollo Full Stack</strong>, <strong>Análisis de Datos</strong> y <strong>Ciberseguridad</strong>.</p>
 <ul>
 <li><strong>Crea un perfil</strong> para destacar tus habilidades.</li>
 <li><strong>Sube tu currículum</strong> y comparte tu experiencia.</li>
 <li><strong>Conéctate</strong> con profesionales en tu campo.</li>
 </ul>
-<p><a href="/es/users/">Comenzar</a>   |   <a href="/es/about/">Más Información</a></p>
+<p><a href="/es/users/" class="text-blue-600 hover:text-blue-800 underline">
+    Comenzar
+  </a>
+     |   <a href="/es/about/" class="text-blue-600 hover:text-blue-800 underline">
+    Más Información
+  </a>
+  </p>
 
     </div>
     </section>
@@ -163,13 +177,15 @@
   
   </main>
 
-  
-
   <footer class="bg-gray-900 text-gray-400 py-8">
     <div class="max-w-7xl mx-auto text-center">
       <p>© 2024 EchoSlate. Todos los derechos reservados.</p>
     </div>
   </footer>
  
+
+  
+  <script src="/js/dark-mode-toggle.js"></script>
+  
 </body>
 </html>

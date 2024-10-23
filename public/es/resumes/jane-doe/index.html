@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=58493&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63126&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EchoSlate</title>
+  <title>Jane Doe | EchoSlate</title>
   <link rel="stylesheet" href="/css/styles.css">
+  
 </head>
-<body class="bg-gray-100 dark:bg-gray-800 dark:text-white">
-  <header class="bg-gray-800 text-white p-4 fixed w-full z-10">
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-white">
+  <header class="bg-gray-800 text-white p-4 fixed w-full z-10 dark:bg-gray-900">
   <nav class="max-w-7xl mx-auto flex justify-between items-center">
     
     <div class="text-2xl font-bold">
@@ -48,7 +49,26 @@
     </ul>
 
     
-    <div class="language-switcher">
+    <div class="flex items-center space-x-4">
+      
+      <button id="dark-mode-toggle" class="focus:outline-none" aria-label="Toggle dark mode">
+        <svg id="dark-mode-icon" class="w-6 h-6 text-white dark:text-yellow-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          
+          <path id="sun-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 2v2m6.364 1.636l-1.414 1.414M22 12h-2
+               M17.657 17.657l-1.414-1.414M12 22v-2
+               m-4.95-1.636l1.414-1.414M2 12h2
+               m1.636-4.95l1.414 1.414" />
+          
+          <path id="moon-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 12.79A9 9 0 0112.21 3
+               a9 9 0 100 18c4.63 0 8.44-3.5
+               8.79-7.9z" />
+        </svg>
+      </button>
+
+      
+      <div class="language-switcher">
     
       <a href="/es/en">English</a>
     
@@ -56,22 +76,39 @@
     
   </div>
   
+    </div>
   </nav>
 </header>
 
 
   <main class="py-16">
     
-<h1 id="jane-doe">Jane Doe</h1>
-<p><strong>Correo Electrónico:</strong> <a href="mailto:jane.doe@example.com">jane.doe@example.com</a><br>
+<article class="prose dark:prose-dark mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <h1 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-4xl font-bold">
+  Jane Doe
+</h1>
+<p><strong>Correo Electrónico:</strong> <a href="mailto:jane.doe@example.com" class="text-blue-600 hover:text-blue-800 underline">
+    jane.doe@example.com
+  </a>
+  <br>
 <strong>Teléfono:</strong> (123) 456-7890<br>
 <strong>Ubicación:</strong> San Francisco, CA, EE.UU.<br>
-<strong>LinkedIn:</strong> <a href="https://linkedin.com/in/janedoe">linkedin.com/in/janedoe</a><br>
-<strong>GitHub:</strong> <a href="https://github.com/janedoe">github.com/janedoe</a></p>
+<strong>LinkedIn:</strong> <a href="https://linkedin.com/in/janedoe" class="text-blue-600 hover:text-blue-800 underline">
+    linkedin.com/in/janedoe
+  </a>
+  <br>
+<strong>GitHub:</strong> <a href="https://github.com/janedoe" class="text-blue-600 hover:text-blue-800 underline">
+    github.com/janedoe
+  </a>
+  </p>
 <hr>
-<h2 id="resumen-profesional">Resumen Profesional</h2>
+<h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  Resumen Profesional
+</h2>
 <p>Desarrolladora Full Stack con más de 5 años de experiencia en la creación de aplicaciones web utilizando JavaScript, Node.js y React. Apasionada por crear aplicaciones eficientes y escalables con un enfoque en la experiencia del usuario y la optimización del rendimiento.</p>
-<h2 id="habilidades">Habilidades</h2>
+<h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  Habilidades
+</h2>
 <ul>
 <li><strong>Lenguajes de Programación:</strong> JavaScript (ES6+), TypeScript, Python, Java</li>
 <li><strong>Frameworks y Librerías:</strong> React, Node.js, Express.js, Next.js</li>
@@ -79,8 +116,12 @@
 <li><strong>Herramientas y Plataformas:</strong> Git, Docker, AWS, Jenkins, CI/CD</li>
 <li><strong>Otros:</strong> APIs RESTful, GraphQL, Agile/Scrum, TDD/BDD</li>
 </ul>
-<h2 id="experiencia">Experiencia</h2>
-<h3 id="desarrolladora-full-stack-senior"><strong>Desarrolladora Full Stack Senior</strong></h3>
+<h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  Experiencia
+</h2>
+<h3 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-2xl font-semibold">
+  <strong>Desarrolladora Full Stack Senior</strong>
+</h3>
 <p><strong>ABC Tech Solutions</strong>, San Francisco, CA<br>
 <strong>Junio 2020 – Presente</strong></p>
 <ul>
@@ -88,7 +129,9 @@
 <li>Colaboró con equipos multifuncionales para diseñar e implementar nuevas funcionalidades, aumentando el compromiso de los usuarios en un 25%.</li>
 <li>Mentora de desarrolladores junior y realizó revisiones de código para mantener la calidad y las mejores prácticas.</li>
 </ul>
-<h3 id="desarrolladora-full-stack"><strong>Desarrolladora Full Stack</strong></h3>
+<h3 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-2xl font-semibold">
+  <strong>Desarrolladora Full Stack</strong>
+</h3>
 <p><strong>XYZ Innovations</strong>, San Francisco, CA<br>
 <strong>Agosto 2017 – Mayo 2020</strong></p>
 <ul>
@@ -96,40 +139,54 @@
 <li>Implementó APIs RESTful e integró servicios de terceros, reduciendo el tiempo de recuperación de datos en un 40%.</li>
 <li>Optimizó consultas de bases de datos, reduciendo los tiempos de carga en un 25% y mejorando la escalabilidad de la aplicación.</li>
 </ul>
-<h2 id="educación">Educación</h2>
-<h3 id="licenciatura-en-ciencias-de-la-computación"><strong>Licenciatura en Ciencias de la Computación</strong></h3>
+<h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  Educación
+</h2>
+<h3 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-2xl font-semibold">
+  <strong>Licenciatura en Ciencias de la Computación</strong>
+</h3>
 <p><strong>Universidad de California, Berkeley</strong><br>
 <strong>2013 – 2017</strong></p>
 <ul>
 <li>GPA: 3.8/4.0</li>
 <li><strong>Cursos Relevantes:</strong> Estructuras de Datos, Algoritmos, Sistemas de Bases de Datos, Ingeniería de Software, Aprendizaje Automático</li>
 </ul>
-<h2 id="proyectos">Proyectos</h2>
+<h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  Proyectos
+</h2>
 <ul>
 <li><strong>Plataforma de Comercio Electrónico:</strong> Construyó una plataforma escalable de comercio electrónico utilizando Node.js y React, manejando más de 10,000 usuarios diarios.</li>
 <li><strong>Aplicación de Chat en Tiempo Real:</strong> Desarrolló una aplicación de chat utilizando WebSocket y Node.js, soportando comunicación en tiempo real para 5,000 usuarios concurrentes.</li>
 <li><strong>Sitio Web de Portafolio:</strong> Creó un sitio web de portafolio personal utilizando Next.js y Tailwind CSS para mostrar proyectos y blogs.</li>
 </ul>
-<h2 id="certificaciones">Certificaciones</h2>
+<h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  Certificaciones
+</h2>
 <ul>
 <li><strong>AWS Certified Solutions Architect – Associate</strong></li>
 <li><strong>Certified ScrumMaster (CSM)</strong></li>
 <li><strong>Oracle Certified Java Programmer</strong></li>
 </ul>
-<h2 id="idiomas">Idiomas</h2>
+<h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  Idiomas
+</h2>
 <ul>
 <li><strong>Inglés:</strong> Nativo</li>
 <li><strong>Español:</strong> Fluido</li>
 </ul>
-<h2 id="referencias">Referencias</h2>
+<h2 class="mt-6 mb-2 text-gray-900 dark:text-gray-100 text-3xl font-semibold">
+  Referencias
+</h2>
 <p>Disponibles a solicitud.</p>
 <hr>
-<p><a href="/files/jane-doe-resume.pdf">Descargar Currículum en PDF</a></p>
+<p><a href="/files/jane-doe-resume.pdf" class="text-blue-600 hover:text-blue-800 underline">
+    Descargar Currículum en PDF
+  </a>
+  </p>
 
+</article>
 
   </main>
-
-  
 
   <footer class="bg-gray-900 text-gray-400 py-8">
     <div class="max-w-7xl mx-auto text-center">
@@ -137,5 +194,9 @@
     </div>
   </footer>
  
+
+  
+  <script src="/js/dark-mode-toggle.js"></script>
+  
 </body>
 </html>
