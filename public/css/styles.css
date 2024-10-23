@@ -1535,26 +1535,26 @@
       --tw-text-opacity: 1;
       color: rgb(255 255 255 / var(--tw-text-opacity));
     }
-  }
-  
-  /* Ensure form text is visible */
-  input[type="text"],
-  input[type="password"] {
-      color: #000; /* Text color in light mode */
-      background-color: #f5f5f5; /* Light background */
-  }
-  
-  .dark input[type="text"],
-  .dark input[type="password"] {
-      color: #fff; /* Text color in dark mode */
-      background-color: #333; /* Dark background */
-  }
-  
-  /* Placeholder styling */
-  ::placeholder {
-      color: #888; /* Placeholder color for light mode */
-  }
-  
-  .dark ::placeholder {
-      color: #bbb; /* Placeholder color for dark mode */
-  }
+}
+
+/* Ensure form text is visible */
+input[type="text"],
+input[type="password"] {
+    color: #000; /* Text color in light mode */
+    background-color: #f5f5f5; /* Light background */
+}
+
+.dark input[type="text"],
+.dark input[type="password"] {
+    color: #fff; /* Text color in dark mode */
+    background-color: #333; /* Dark background */
+}
+
+/* Placeholder styling */
+::placeholder {
+    color: #888; /* Placeholder color for light mode */
+}
+
+.dark ::placeholder {
+    color: #bbb; /* Placeholder color for dark mode */
+}
