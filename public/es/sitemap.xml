@@ -97,19 +97,16 @@
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/es/users/resumes/jane-doe/</loc>
-    <loc>http://localhost:1313/es/resumes/jane-doe/</loc>
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/users/resumes/jane-doe/"
-                href="http://localhost:1313/resumes/jane-doe/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
                 href="http://localhost:1313/es/users/resumes/jane-doe/"
-                href="http://localhost:1313/es/resumes/jane-doe/"
                 />
   </url><url>
     <loc>http://localhost:1313/es/tags/node.js/</loc>
@@ -139,35 +136,29 @@
                 />
   </url><url>
     <loc>http://localhost:1313/es/tags/</loc>
-    <loc>http://localhost:1313/es/resumes/</loc>
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/tags/"
-                href="http://localhost:1313/resumes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
                 href="http://localhost:1313/es/tags/"
-                href="http://localhost:1313/es/resumes/"
                 />
   </url><url>
     <loc>http://localhost:1313/es/users/</loc>
-    <loc>http://localhost:1313/es/tags/</loc>
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/users/"
-                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
                 href="http://localhost:1313/es/users/"
-                href="http://localhost:1313/es/tags/"
                 />
   </url><url>
     <loc>http://localhost:1313/es/categories/</loc>

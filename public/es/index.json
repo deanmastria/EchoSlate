@@ -1,9 +1,39 @@
 
 [
     {
+      "title": "Home",
+      "permalink": "/es/home/",
+      "content": ""
+    },
+    {
       "title": "Inicio",
       "permalink": "/es/",
       "content": "\rBienvenido a EchoSlate\rEchoSlate es tu plataforma digital para mostrar currículums y proyectos en Desarrollo Full Stack, Análisis de Datos y Ciberseguridad.\nCrea un perfil para destacar tus habilidades. Sube tu currículum y comparte tu experiencia. Conéctate con profesionales en tu campo. Comenzar\r| Más Información\r"
+    },
+    {
+      "title": "Search",
+      "permalink": "/es/search/",
+      "content": ""
+    },
+    {
+      "title": "Upload",
+      "permalink": "/es/upload/",
+      "content": ""
+    },
+    {
+      "title": "Edit",
+      "permalink": "/es/edit/",
+      "content": ""
+    },
+    {
+      "title": "Contact",
+      "permalink": "/es/contact/",
+      "content": ""
+    },
+    {
+      "title": "About",
+      "permalink": "/es/about/",
+      "content": "\rWelcome to EchoSlate. We are committed to showcasing your talents.\r"
     },
     {
       "title": "Desarrollo Full Stack",
@@ -31,9 +61,9 @@
       "content": ""
     },
     {
-      "title": "Usuarios",
+      "title": "Users",
       "permalink": "/es/users/",
-      "content": "\rNuestros Usuarios\rExplora los currículums de profesionales que muestran sus habilidades y experiencia.\n"
+      "content": ""
     },
     {
       "title": "Categories",

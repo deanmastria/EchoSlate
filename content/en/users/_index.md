@@ -1,7 +1,7 @@
 +++
 title = "Users"
 lang = "en"
-translationKey= "users-page"
+translationKey = "users-page"
 draft = false
 +++
 
