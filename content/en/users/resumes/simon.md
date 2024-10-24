@@ -2,7 +2,7 @@
 title = "Simon Chang"
 description = "Full Stack Developer Resume"
 date = 2024-10-18
-image = "/images/users/jane-doe.jpg"
+image = "/images/users/simon.jpg"
 tags = ["Full Stack Development", "React", "Node.js"]
 +++
 

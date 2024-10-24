@@ -2,15 +2,15 @@
 title = "Ryan Panagrosso"
 description = "Full Stack Developer Resume"
 date = 2024-10-18
-image = "/images/users/jane-doe.jpg"
+image = "/images/users/ryan.jpg"
 tags = ["Full Stack Development", "React", "Node.js"]
 +++
 
-# Jane Doe
+# Ryan Panagrosso
 
-**Email:** jane.doe@example.com  
-**Phone:** (123) 456-7890  
-**Location:** San Francisco, CA, USA  
+**Email:** panagrosso.ryan@gmail.com 
+**Phone:** (860) 334-5848
+**Location:** Wilmington NC  
 **LinkedIn:** [linkedin.com/in/janedoe](https://linkedin.com/in/janedoe)  
 **GitHub:** [github.com/janedoe](https://github.com/janedoe)  
 

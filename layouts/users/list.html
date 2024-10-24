@@ -4,6 +4,17 @@
   <div class="prose dark:prose-dark mb-8">
     {{ .Content }}
   </div>
-  <!-- No loop over .Pages to prevent rendering resumes -->
+
+  <!-- Display the list of resumes -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {{ $resumes := .Site.GetPage "section" "users/resumes" }}
+    {{ if $resumes }}
+        {{ range $resumes.Pages }}
+            {{ partial "resume-card.html" . }}
+        {{ end }}
+    {{ else }}
+        <p>No resumes found.</p>
+    {{ end }}
+  </div>
 </section>
 {{ end }}
