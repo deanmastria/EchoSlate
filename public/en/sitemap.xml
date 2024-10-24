@@ -31,6 +31,9 @@
     <loc>http://localhost:1313/users/resumes/dean/</loc>
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/users/resumes/tommy/</loc>
+    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/full-stack-development/</loc>
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
   </url><url>
@@ -46,6 +49,9 @@
                 hreflang="en"
                 href="http://localhost:1313/users/resumes/jane-doe/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/tags/javascript/</loc>
+    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/node.js/</loc>
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
@@ -97,9 +103,6 @@
                 hreflang="en"
                 href="http://localhost:1313/tags/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/users/resumes/tommy/</loc>
-    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/users/</loc>
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
