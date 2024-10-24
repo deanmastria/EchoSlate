@@ -3,7 +3,7 @@
         <!-- Logo acting as Home Link, glowing blue on Home page -->
         <div class="text-2xl font-bold">
             <a href="{{ "/" | relLangURL }}" 
-               class="{{ if .IsHome }}text-blue-500{{ else }}hover:text-gray-400{{ end }}">
+               {{ if .IsHome }}style="color: #4A90E2;"{{ else }}class="text-white hover:text-gray-400"{{ end }}>
                 EchoSlate
             </a>
         </div>
@@ -13,9 +13,10 @@
             {{ range .Site.Menus.main }}
                 <li>
                     <a href="{{ .URL | relLangURL }}" 
-                       class="{{ if eq .URL $.RelPermalink }}text-blue-500{{ else }}text-white hover:text-gray-400{{ end }}">
-                        {{ .Name }}
-                    </a>
+                    {{ if eq .URL $.RelPermalink }}style="color: #4A90E2;"{{ else }}class="text-white hover:text-gray-400"{{ end }}>
+                    {{ .Name }}
+                 </a>
+                 
                 </li>
             {{ end }}
         </ul>
@@ -44,16 +45,17 @@
                 <!-- English Language Link -->
                 {{ $en := index .Translations 0 }}
                 <a href="{{ if $en }}{{ $en.RelPermalink }}{{ else }}{{ "/en/" | relLangURL }}{{ end }}" 
-                   class="{{ if eq .Lang "en" }}text-blue-500{{ else }}text-white hover:text-gray-400{{ end }}">
+                   {{ if eq .Lang "en" }}style="color: #4A90E2;"{{ else }}class="text-white hover:text-gray-400"{{ end }}>
                     English
                 </a>
 
                 <!-- Spanish Language Link -->
                 {{ $es := index .Translations 1 }}
                 <a href="{{ if $es }}{{ $es.RelPermalink }}{{ else }}{{ "/es/" | relLangURL }}{{ end }}" 
-                   class="{{ if eq .Lang "es" }}text-blue-500{{ else }}text-white hover:text-gray-400{{ end }}">
+                   {{ if eq .Lang "es" }}style="color: #4A90E2;"{{ else }}class="text-white hover:text-gray-400"{{ end }}>
                     Español
                 </a>
+
 
                 <!-- User Name Display -->
                 <div id="userHeader" class="text-lg font-bold" style="display: none;"></div>
