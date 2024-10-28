@@ -1,6 +1,6 @@
 // Import Firebase SDKs
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
 
 // Firebase configuration
 const firebaseConfig = {
@@ -16,36 +16,40 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-// Check if Firebase is initialized
-import { getApps } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+// Function to update the user information in the header
+function updateUserHeader(email) {
+  const userHeader = document.getElementById("userHeader");
+  const userDropdown = document.getElementById("userDropdown");
 
-if (getApps().length === 0) {
-  console.log("Firebase is not initialized.");
-} else {
-  console.log("Firebase is already initialized.");
+  if (userHeader && userDropdown) {
+    userHeader.textContent = email;
+    userHeader.style.display = "block";
+    localStorage.setItem("loggedInEmail", email); // Store email in localStorage for persistence
+    console.log("Email set in header and localStorage:", email); // Debugging
+  }
 }
 
-// Handle registration form submission
-document.getElementById("registerForm")?.addEventListener("submit", function (e) {
-  e.preventDefault();
-  const email = document.getElementById("registerEmail").value;
-  const password = document.getElementById("registerPassword").value;
+// Restore email from localStorage if user is logged in
+document.addEventListener("DOMContentLoaded", () => {
+  const savedEmail = localStorage.getItem("loggedInEmail");
+  if (savedEmail) {
+    updateUserHeader(savedEmail);
+  } else {
+    console.log("No email found in localStorage.");
+  }
+});
 
-  console.log("Register form submitted with:", email, password); // Debugging output
-
-  // More logging to see when the creation begins
-  console.log("Attempting to create a user...");
-
-  createUserWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      const user = userCredential.user;
-      console.log("User created successfully:", user);
-      alert("Registration successful!");
-    })
-    .catch((error) => {
-      console.error("Error during user creation:", error.code, error.message); // Show full error details
-      alert(`Error: ${error.message}`);
-    });
+// Auth state listener to handle session persistence across all pages
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    updateUserHeader(user.email);
+  } else {
+    const userHeader = document.getElementById("userHeader");
+    if (userHeader) {
+      userHeader.style.display = "none";
+    }
+    localStorage.removeItem("loggedInEmail"); // Clear email from localStorage if logged out
+  }
 });
 
 // Handle login form submission
@@ -54,16 +58,37 @@ document.getElementById("loginForm")?.addEventListener("submit", function (e) {
   const email = document.getElementById("loginEmail").value;
   const password = document.getElementById("loginPassword").value;
 
-  console.log("Login form submitted with:", email, password); // Debugging output
-
   signInWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      const user = userCredential.user;
-      console.log("User logged in successfully:", user);
+    .then(() => {
       alert("Login successful!");
+      location.reload(); // Reload to apply changes across all pages
     })
     .catch((error) => {
-      console.error("Error during login:", error.code, error.message); // Show full error details
       alert(`Error: ${error.message}`);
     });
 });
+
+// Handle logout
+document.getElementById("logoutButton")?.addEventListener("click", () => {
+  signOut(auth).then(() => {
+    alert("Logged out!");
+    localStorage.removeItem("loggedInEmail"); // Clear email from localStorage
+    location.reload(); // Refresh the page to clear the UI
+  }).catch((error) => {
+    alert(`Error: ${error.message}`);
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
